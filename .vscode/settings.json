@@ -1,0 +1,11 @@
+{
+    "C_Cpp.intelliSenseEngine": "default",
+    "idf.espIdfPathWin": "C:\\Users\\ptv\\esp\\v5.3\\esp-idf",
+    "idf.espAdfPathWin": "c:\\esp\\esp-adf",
+    "idf.openOcdConfigs": [
+        "board/esp32c6-bridge.cfg"
+    ],
+    "idf.portWin": "COM8",
+    "idf.toolsPathWin": "c:\\esp",
+    "idf.flashType": "UART"
+}
