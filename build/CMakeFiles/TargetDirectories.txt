@@ -5,8 +5,6 @@ C:/esp_projects/AHT20-BMP280/build/CMakeFiles/bootloader.dir
 C:/esp_projects/AHT20-BMP280/build/CMakeFiles/gen_project_binary.dir
 C:/esp_projects/AHT20-BMP280/build/CMakeFiles/app.dir
 C:/esp_projects/AHT20-BMP280/build/CMakeFiles/erase_flash.dir
-C:/esp_projects/AHT20-BMP280/build/CMakeFiles/uf2.dir
-C:/esp_projects/AHT20-BMP280/build/CMakeFiles/uf2-app.dir
 C:/esp_projects/AHT20-BMP280/build/CMakeFiles/merge-bin.dir
 C:/esp_projects/AHT20-BMP280/build/CMakeFiles/monitor.dir
 C:/esp_projects/AHT20-BMP280/build/CMakeFiles/flash.dir
@@ -16,6 +14,8 @@ C:/esp_projects/AHT20-BMP280/build/CMakeFiles/AHT20-BMP280.elf.dir
 C:/esp_projects/AHT20-BMP280/build/CMakeFiles/size.dir
 C:/esp_projects/AHT20-BMP280/build/CMakeFiles/size-files.dir
 C:/esp_projects/AHT20-BMP280/build/CMakeFiles/size-components.dir
+C:/esp_projects/AHT20-BMP280/build/CMakeFiles/uf2.dir
+C:/esp_projects/AHT20-BMP280/build/CMakeFiles/uf2-app.dir
 C:/esp_projects/AHT20-BMP280/build/CMakeFiles/edit_cache.dir
 C:/esp_projects/AHT20-BMP280/build/CMakeFiles/rebuild_cache.dir
 C:/esp_projects/AHT20-BMP280/build/CMakeFiles/list_install_components.dir

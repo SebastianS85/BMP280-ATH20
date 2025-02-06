@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include "BMP280.h"
 #include "driver/i2c_master.h"
-#include "driver/i2c.h"
 #include "esp_log.h"
 #include "freertos/FreeRTOS.h"
 #include "i2c_bus.h"
@@ -20,10 +19,11 @@ esp_err_t bmp280_init(void){
         .scl_speed_hz = I2C_MASTER_FREQ_HZ
     };
 
+
+    i2c_master_bus_handle_t i2c_bus;
+    ESP_ERROR_CHECK(i2c_master_get_bus_handle(0, &i2c_bus));
     return i2c_master_bus_add_device(i2c_bus, &dev_cfg, &bmp280_handle);
 }
-
-
 
 void  bmp280_get_id(void){
     uint8_t data[1];

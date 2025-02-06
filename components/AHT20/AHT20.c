@@ -6,6 +6,7 @@
 #include "i2c_bus.h"
 
 
+
 #define TAG "AHT20"
 #define AHT20_ADDR 0x38
 
@@ -19,8 +20,9 @@ esp_err_t aht20_init(void){
         .device_address = AHT20_ADDR,
         .scl_speed_hz = I2C_MASTER_FREQ_HZ
     };
-
-    return i2c_master_bus_add_device(i2c_bus, &dev_cfg, &aht20_handle);
+    i2c_master_bus_handle_t i2c_bus_handle;
+    ESP_ERROR_CHECK(i2c_master_get_bus_handle(0, &i2c_bus_handle));
+    return i2c_master_bus_add_device(i2c_bus_handle, &dev_cfg, &aht20_handle);
 }
 
 
