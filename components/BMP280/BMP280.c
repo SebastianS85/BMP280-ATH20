@@ -8,7 +8,7 @@
 
 #define TAG "AHT20"
 
-static i2c_master_dev_handle_t bmp280_handle = NULL;
+static i2c_master_dev_handle_t bmp280_handle;
 
 esp_err_t bmp280_init(void){
 
@@ -22,7 +22,8 @@ esp_err_t bmp280_init(void){
 
     i2c_master_bus_handle_t i2c_bus;
     ESP_ERROR_CHECK(i2c_master_get_bus_handle(0, &i2c_bus));
-    return i2c_master_bus_add_device(i2c_bus, &dev_cfg, &bmp280_handle);
+    esp_err_t init_state =i2c_master_bus_add_device(i2c_bus, &dev_cfg, &bmp280_handle);
+    return init_state ;
 }
 
 void  bmp280_get_id(void){

@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "AHT20-BMP280",
-    "project_version":    "9e0f039-dirty",
+    "project_version":    "30c8d0f-dirty",
     "project_path":       "C:/esp_projects/AHT20-BMP280",
     "idf_path":           "C:/esp/v5.3.2/esp-idf",
     "build_dir":          "C:/esp_projects/AHT20-BMP280/build",

@@ -4,7 +4,7 @@
 #define BMP280_ID_REG 0xD0
 
 
-static
+
 #include "driver/i2c_master.h"
 
 esp_err_t bmp280_init(void);
